@@ -1,0 +1,1 @@
+console.log("Dices roller app is now running!");
