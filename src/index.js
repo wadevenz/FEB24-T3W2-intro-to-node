@@ -1,3 +1,5 @@
+const inquirer = require("inquirer");
+
 console.log("Dices roller app is now running!");
 
 /**
@@ -8,10 +10,22 @@ console.log("Dices roller app is now running!");
 function rollDice(diceSize = 20) {
     let diceResult = 0;
 
-    
     diceResult = Math.ceil(Math.random() * diceSize);
 
     return diceResult;
 }
 
 console.log("Random dice roll result is: " + rollDice());
+
+const prompt = inquirer.createPromptModule();
+
+prompt([
+    {
+        type: "number",
+        name: "dice_size",
+        message: "What size of dice do you want to roll?"
+    }
+]).then((answer) => {
+    console.log(answer);
+    console.log(rollDice(answer.dice_size))
+});

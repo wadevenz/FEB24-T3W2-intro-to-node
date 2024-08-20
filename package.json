@@ -4,9 +4,16 @@
   "description": "Super cool dice rolling terminal app.",
   "main": "src/index.js",
   "scripts": {
-    "start":"node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "Wade",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^10.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
