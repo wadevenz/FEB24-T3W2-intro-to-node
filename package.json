@@ -6,13 +6,13 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "docs":"jsdoc ./src/*"
+    "docs": "jsdoc ./src/*"
   },
   "keywords": [],
   "author": "Wade",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^10.1.8"
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
     "jsdoc": "^4.0.3",
